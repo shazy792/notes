@@ -2,17 +2,29 @@
 
 <head>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">-->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+     <link rel='stylesheet' href='/styles/stylesheet.css' />
 </head>
 
 <body>
     <div class="container">
-        <h3 class="center">Your shared note</h3>
-        <div class="card">
-            <%= note.note %>
+        <div class="logo">ununruly</div>
+        <div class="navBar">
+            <ul>
+                <li>New Note</li>
+            </ul>
+        </div>
+        <div class="note">
+            
+            <form action="/note" method="POST">
+                <input disabled type="text" name="title" class="center" placeholder = <%=note.title%>>
+                <hr/>
+                <textarea disabled name="note" cols="40" rows="10" placeholder= <%=note.note%>></textarea>
+                <!--<input type="text" name="note">-->
+            </form>
         </div>
     </div>
 </body>

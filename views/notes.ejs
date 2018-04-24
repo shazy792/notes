@@ -2,19 +2,32 @@
 
 <head>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">-->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <link rel='stylesheet' href='/styles/stylesheet.css' />
 </head>
 
 <body>
     <div class="container">
-        <h3 class="center">Add a new note</h3>
-        <form action="/note" method="POST">
-            <input type="text" name="note">
-            <button type="submit" class="btn">Submit</button>
-        </form>
+        <div class="logo">ununruly</div>
+        <div class="navBar">
+            <ul>
+                <a><li>New Note</li></a>
+            </ul>
+        </div>
+        <div class="note">
+            
+            <form action="/note" method="POST">
+                <input type="text" name="title" class="center" placeholder = "Untitled Note">
+                <hr/>
+                <textarea name="note" cols="40" rows="10"></textarea>
+                <!--<input type="text" name="note">-->
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 
