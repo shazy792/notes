@@ -7,28 +7,29 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <link rel='stylesheet' href='/styles/stylesheet.css' />
+    <link rel='stylesheet' href='/styles/style.css' />
+   
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="logo">ununruly</div>
-        <div class="navBar">
-            <ul>
-                <a><li>New Note</li></a>
-            </ul>
+        <div class="sidenav">
+            <a href="http://localhost:3000/">New Note</a>
+            <a href="#">Saved Notes</a>
+            <a href="#">About</a>
         </div>
         <div class="note">
             
             <form action="/note" method="POST">
                 <input type="text" name="title" class="center" placeholder = "Untitled Note">
                 <hr/>
-                <textarea name="note" cols="40" rows="10"></textarea>
+                <textarea name="note" cols="60" rows="40" placeholder="Write Something... "></textarea>
                 <!--<input type="text" name="note">-->
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn">Save</button>
             </form>
         </div>
-    </div>
+    <!-- </div> -->
 </body>
 
 </html>

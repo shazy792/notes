@@ -2,15 +2,38 @@
 
 <head>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
+    <script>
+    	function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("Copy");
+  
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+    </script>
+    <link rel='stylesheet' href='/styles/style.css' />
+ 
 </head>
 
 <body>
-    <div class="container center">
-        <h5>Your shareable link: <%= id %></h5>
+	<div class="logo">ununruly</div>
+    <div class="container">
+        <h5>Your shareable link: </h5>
+        <input  type="text" id = "myInput"value= <%= id %>>
+        <div class="tooltip">
+	<button onclick="myFunction()" onmouseout="outFunc()" id="link-button">
+  	<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  </button>
+</div>
+
     </div>
 </body>
 

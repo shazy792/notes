@@ -1,0 +1,99 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin: 0px;
+}
+
+.logo {
+    background-color: #bfbfbf;
+    min-height: 60px !important;
+    width:100%;
+    text-align: center;
+    padding-top:25px;
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        
+}
+
+.sidenav {
+    height: 100%;
+    margin-top: 85px;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.note {
+    margin-left: 160px;
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+
+.note hr{
+            margin-top:-8px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+.note input{
+            border: 0px;
+            margin-top: 5px;
+            width: 70%;
+            display: block;
+            font-size: 1.25em;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+.note form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+button {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    font-size:25px;
+}
+
+button:hover {
+    background-color: #4d4d4d;
+}
+
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
