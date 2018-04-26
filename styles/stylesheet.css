@@ -1,0 +1,82 @@
+html, body {
+            margin:0px;
+            padding:0px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .logo {
+            background-color: gray;
+            min-height: 60px !important;
+            width:100%;
+            text-align: center;
+            padding-top:25px;
+            color: white;
+            font-weight: 600;
+            font-size: 2em;
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .navBar{
+            background-color: black;
+            width: 15%;
+            min-width: 150px !important;
+            height: 100%;
+            float: left;
+            margin-right:25px;
+        }
+
+        .navBar li{
+            color: white;
+            padding-bottom: 20px;
+
+        }
+        .navBar li:hover{
+            color:gray;
+            cursor: pointer;
+        }
+
+        .navBar ul{
+            list-style: none;
+            margin-top: 30px;
+            float: left;
+        }
+
+        .note {
+            padding: 25px;
+        }
+
+        .note hr{
+            margin-top:-10px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .note h3{
+            color: gray;
+        }
+
+        .note form textarea{
+            width: 70%;
+            display: block;
+            height:50%;
+            border: 0px;
+            font-size: 1em;
+        }
+
+        .note form button{
+            margin-top: 15px;
+            color:white;
+            background:black;
+            padding:10px;
+            width:250px;
+            text-align: center;
+
+        }
+
+        .note input{
+            border: 0px;
+            width: 70%;
+            display: block;
+            font-size: 1.25em;
+            color: gray;
+            margin-bottom: 17px;
+        }
